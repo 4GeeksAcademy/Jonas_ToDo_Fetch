@@ -48,7 +48,7 @@ const TodoList = () => {
 
     // Eliminar tarea
     const deleteTask = async (index) => {
-        const updatedTasks = tasks.filter((_, i) => i !== index);
+        const updatedTasks = tasks.filter((_, i) => i !== index); // ¿what?
         await syncTasks(updatedTasks);
     };
 
@@ -67,7 +67,7 @@ const TodoList = () => {
                     className="form-control"
                     value={newTask}
                     onChange={(e) => setNewTask(e.target.value)}
-                    placeholder="Nueva tarea..."
+                    placeholder="Escribe aquí una nueva tarea..."
                 />
                 <button className="btn btn-primary" onClick={createTask}>Agregar</button>
             </div>
